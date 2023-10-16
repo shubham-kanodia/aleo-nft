@@ -1,0 +1,30 @@
+// The program input for aleo_nft/src/main.leo
+[initialize]
+token_data: field = 100field;
+amount: u128 = 2u128;
+
+[mint]
+to: address = aleo1jzpc5zt796fz3a6dlsyfq5mlnhuemmwcw43x42duksw5ldx6ds8qtqndpd;
+token_data: field = 100field;
+
+[transfer_private]
+nft: NFTRecord = NFTRecord {
+  owner: aleo1jzpc5zt796fz3a6dlsyfq5mlnhuemmwcw43x42duksw5ldx6ds8qtqndpd,
+  token_data: 100field,
+  _nonce: 4969672039555899359333137484982307883154925354360072170013029418247407872806group
+};
+to: address = aleo1vnxjfw5m3xkn542j20fr8ekzw3wzayln7m5yfj3ghdvpvgayvqqs827kth;
+
+[convert_private_to_public]
+nft: NFTRecord = NFTRecord {
+  owner: aleo1jzpc5zt796fz3a6dlsyfq5mlnhuemmwcw43x42duksw5ldx6ds8qtqndpd,
+  token_data: 100field,
+  _nonce: 2192613654156332094901481796875411033524320862740471904575929127762396919005group
+};
+
+[convert_public_to_private]
+token_data: field = 100field;
+
+[transfer_public]
+to: address = aleo1vnxjfw5m3xkn542j20fr8ekzw3wzayln7m5yfj3ghdvpvgayvqqs827kth;
+token_data: field = 100field;

@@ -1,0 +1,6 @@
+{
+    "program": "aleo_nft.aleo",
+    "version": "0.0.1",
+    "description": "NFT implementation in Leo",
+    "license": "MIT"
+}
